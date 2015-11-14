@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My portfolio page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script>
+		// Picture element HTML5 shiv
+			document.createElement( "picture" );
+		</script>
+		<script src="javascript/picturefill.js" async></script>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/zocial.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+				<div class="row">
+					<div class="logo">
+							<img class="logo_thumbnail" src="images/monkey.png" alt="A stone monkey face" >
+					</div>
+					<div class="title">
+						<h1 class="title_name">Jeremy Bender</h1>
+						<h3 class="sub_title">Front-end ninja</h3>
+					</div>
+				</div>
+			</header>
+			<hr class="style-eight">
+			<article>
+				<div class="row">
+					<picture class="hero">
+						<source media="(min-width: 801px)" srcset="images/hero-2x.jpg 2x, images/hero-1x.jpg" />
+						<source media="(min-width: 501px)" srcset="images/hero-large.jpg" />
+						<img src="images/hero-medium.jpg" alt="Graffiti of gorillas on a wall">
+					</picture>
+				</div>
+				<div class="row">
+					<div class="featured_work">
+						<h2 class="featured_work">Featured Work</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="features">
+						<img class="thumbnail" src="images/lion.jpg" alt="A stone bust of a lion" data-toggle="modal" data-target="#project1">
+						<h3>Appify</h3>
+						<p>A sampling of apps I have built</p>
+					</div>
+					<div class="features">
+						<img class="thumbnail" src="images/cat_graffiti.jpg" alt="Graffiti of a flying cat on a wall" data-toggle="modal" data-target="#project2">
+						<h3>Websites</h3>
+						<p>Websites I have designed</p>
+					</div>
+					<div class="features">
+						<img class="thumbnail" src="images/Bubba.jpg" alt="A grumpy cat on a yoga matt" data-toggle="modal" data-target="#project3">
+						<h3>Other</h3>
+						<p>Everything else I have to show off</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="footer">
+						<a href="https://www.facebook.com/BendedBrains" class="zocial facebook">Facebook</a>
+						<a href="https://twitter.com/bendedbrains" class="zocial twitter">Twitter</a>
+						<a href="https://github.com/dooster" class="zocial github">Github</a>
+						<a href="https://plus.google.com/+JeremyBender/posts" class="zocial googleplus">Google+</a>
+					</div>
+				</div>
+
+
+						<!-- Modal -->
+			<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="myModalLabel">Appify</h4>
+						</div>
+						<div class="modal-body">
+							<img class="img-responsive" src="images/lion.jpg" alt="A stone lion">
+							<br>
+							<p>Someday information about apps I have built will go here.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="myModalLabel">Websites</h4>
+						</div>
+						<div class="modal-body">
+							<img class="img-responsive" src="images/cat_graffiti.jpg" alt="Grafitti of a flying cat on a wall">
+							<br>
+							<p>Same goes for websites that I have built.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="myModalLabel">Other</h4>
+						</div>
+						<div class="modal-body">
+							<img class="img-responsive" src="images/Bubba.jpg" alt="A grumpy cat sitting on a yoga mat">
+							<br>
+							<p>Who knows what will go here?</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			</article>
+		</div>
+	</body>
+
+</html>
